@@ -1,0 +1,49 @@
+.projects-grid {
+    display: flex;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .projects-grid {
+      display: flex;
+      flex-direction: column;
+    
+    }
+  
+    .projects-grid .mdl-card {
+      margin: auto;
+    } 
+  }
+  
+  .projects-grid .mdl-card {
+    margin-top: 50px;
+    align-self: flex-start; 
+    margin-right: auto;
+    margin-left: auto;
+  } 
+  
+  .contact-body {
+    margin: auto;
+    background: grey;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+  }
+  
+  .contact-grid {
+    text-align: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    background: white;
+    color: black;
+    border: 2px solid red;
+    margin-bottom: 20px;
+  }
+  
+  /*Card title*/
+  #p1 .mdl-card__title {
+    background: url('https://r00t4bl3.com/uploads/android-studio-6464af9314a635bd20494fd1b343d2fa.png');
+    background-size: 100% 100%;
+  }
