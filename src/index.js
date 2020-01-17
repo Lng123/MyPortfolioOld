@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 // import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './components/Navigation';
 import Header from './components/Header';
 import Projects from './components/Projects'
 import * as serviceWorker from './serviceWorker';
+import './index.css';
 import 'react-mdl/extra/material.css';
 import 'react-mdl/extra/material.js';
+
 
 
 class App extends Component{

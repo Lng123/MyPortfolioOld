@@ -1,13 +1,15 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
+import layer from '../img/Background-min.png';
 import './css/Header.css'
 
 class Header extends Component {
     render() {
         return(
             <header>
-                <Grid className = "landing-grid">
-                <Cell col={12}>
+                <div className = "landing-grid">
+                {/* <img className="layer" alt="none" src={layer}/> */}
+                <div>
                     <img className= "avatar-img" alt= "avatar" src="https://dummyimage.com/600x400/000/fff"/>
                     <div className= "banner-text">
                         <h1>Portfolio</h1>
@@ -25,8 +27,9 @@ class Header extends Component {
 
                         </div>
                     </div>
-                </Cell>
-                </Grid>
+                </div>
+                </div>
+
             </header>
         );
     }

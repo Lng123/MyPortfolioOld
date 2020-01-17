@@ -43,7 +43,17 @@
   }
   
   /*Card title*/
-  #p1 .mdl-card__title {
+  /* #p1 .mdl-card__title {
     background: url('https://r00t4bl3.com/uploads/android-studio-6464af9314a635bd20494fd1b343d2fa.png');
     background-size: 100% 100%;
+  } */
+
+  .mdl-card__supporting-text h3{
+    color: #000000;
+    font-size: 16pt;
+    margin: 0pt;
+  }
+
+  #Argos1 {
+    background: url("../../img/Argos1.png");
   }

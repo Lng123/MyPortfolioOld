@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import {Grid, Cell, Card, CardTitle, CardActions, Button, CardText, CardMenu, IconButton} from 'react-mdl';
 import {Collapse} from 'react-collapse';
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from 'react-bootstrap';
 import './css/Projects.css';
+import argos1 from '../img/Argos1.png';
 
 class Projects extends Component {
 
@@ -10,6 +11,7 @@ class Projects extends Component {
         super(props);
         this.state = {buttonStatus: false, isOpened: false, activeTab: 0};
         this.handleClick = this.handleClick.bind(this);
+        
     }
 
     handleClick(event) {
@@ -28,24 +30,37 @@ class Projects extends Component {
                     <Cell col={12}>
                     <div className="projects-grid">
                     <Card id="p1" shadow={5} style={{minWidth: '450px', height: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '300px'
-                        }}>Android Project 1
+                    <CardText>
+                        <span>Argos</span>
+                    </CardText>
+                    
+                    <Carousel interval={false}>
+                    <Carousel.Item>
+                        <img src={argos1}/>
+                    </Carousel.Item>
+
+                    <Carousel.Item>
+                    <CardTitle style={{height: '300px'}}>Android Project 1
                         </CardTitle>
-                        <Collapse isOpened ={this.state.isOpened}>
-                            <CardText>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                                    Test Test<br/>
-                            </CardText>
+                    </Carousel.Item>
+
+                    </Carousel>
+
+                    <Collapse isOpened ={this.state.isOpened}>
+                        <CardText>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                                Test Test<br/>
+                        </CardText>
                         </Collapse>
                         <CardActions border>
                             <Button colored onClick = {this.handleClick}>More Info</Button>
@@ -53,7 +68,7 @@ class Projects extends Component {
                         </CardActions>
                     </Card>
                     <Card shadow={5} style={{minWidth: '450px'}}>
-                        <CardTitle style={{color: '#fff', height: '300px'}}>Android Project 1
+                        <CardTitle style={{height: '300px'}}>Android Project 1
                         </CardTitle>
                         <CardText>
                             Test Test
@@ -62,9 +77,6 @@ class Projects extends Component {
                             <Button colored>More Info</Button>
                             <Button colored>GitHub</Button>
                         </CardActions>
-                        <CardMenu style={{color: '#fff'}}>
-                            <IconButton name="share"/>
-                        </CardMenu>
                     </Card>
                 </div>
                     </Cell>
