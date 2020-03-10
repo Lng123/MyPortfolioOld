@@ -37,7 +37,7 @@ class Projects extends Component {
         return(
             <div className="projects" id="projects">
                 <Grid>
-                    <Cell col={12}>
+                    <Grid item xs>
                     <div className="projects-grid">
                     <Card id="p1" shadow={5} >
                     <CardText>
@@ -76,7 +76,12 @@ class Projects extends Component {
                         </CardText>
                         </Collapse>
                     </Card>
+                    </div>
+                    </Grid>
+                    <Grid>
+                    <div className="projects-grid">
                     <Card id="p1" shadow={5} >
+
                         <CardText>
                             <span>TAOEX Club</span>
                         </CardText>
@@ -121,14 +126,16 @@ class Projects extends Component {
                             Laravel PHP Framework, MySql
                             </CardText>
                         </Collapse>
+                        
                     </Card>
-
+                    </div>
                     
 
-                </div>
+                {/* </div> */}
                 
-                    </Cell>
-                    <Cell col={12}>
+                    </Grid>
+
+                    <Grid item xs>
                     <div className="projects-grid">
                     <Card id="p1" shadow={5} >
                         <CardText>
@@ -172,7 +179,7 @@ class Projects extends Component {
                         </Collapse>
                     </Card>
                     </div>
-                    </Cell>
+                    </Grid>
                 </Grid>
             </div>
         )
