@@ -12,6 +12,9 @@ code {
     monospace;
 }
 
-body {
+html,body, div {
   box-sizing: border-box;
+  height: 100%;
 }
+
+

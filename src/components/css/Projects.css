@@ -8,15 +8,6 @@
   align-items: 'flex-start';
 }
 
-.projects {
-  background: #4B79A1;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4B79A1, #89C5D4);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4B79A1, #89C5D4);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
-}
-
 
 @media screen and (max-width: 1000px) {
   .projects-grid {

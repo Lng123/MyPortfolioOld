@@ -7,8 +7,8 @@ class Header extends Component {
     render() {
         return(
             <header>
-                <div className = "landing-grid">
-                <div>
+                <section className = "landing-grid">
+
                     <div className= "banner-text">
                         <h1>Louis Ng</h1>
                         <hr/>
@@ -22,8 +22,8 @@ class Header extends Component {
                         </div>
                         <a href="#projects" class="btn btn-default">Projects</a>
                     </div>
-                </div>
-                </div>
+
+                </section>
 
             </header>
         );
