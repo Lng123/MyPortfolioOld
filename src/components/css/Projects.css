@@ -6,6 +6,7 @@
 
 .mdl-grid {
   align-items: 'flex-start';
+  height: auto;
 }
 
 
@@ -15,6 +16,7 @@
     flex-direction: column;
     width: 100%;
     flex: 1 1 auto;
+    height: auto;
   }
 
   .projects-grid .mdl-card {

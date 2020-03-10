@@ -21,6 +21,7 @@ class Header extends Component {
                         </a>
                         </div>
                         <a href="#projects" class="btn btn-default">Projects</a>
+
                     </div>
 
                 </section>

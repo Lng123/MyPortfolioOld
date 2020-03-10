@@ -27,6 +27,12 @@
     text-align: center;
 
   }
+
+  .landing-grid, header, .box {
+    height: auto;
+    width: 100%;
+  }
+
 }
 
 
@@ -37,8 +43,7 @@
   margin: auto;
   margin-top: 50px;
   border-radius: 10px;
-  height: 70vh;
-  overflow: auto;
+  height: auto;
 
 }
 
@@ -58,7 +63,8 @@
 }
 
 .banner-text div {
-  height: 20vh;
+  height: auto;
+  overflow: auto;
 }
 
 .icon {
