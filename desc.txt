@@ -31,3 +31,17 @@ Inviting new players to clubs
 Owning and joining multiple clubs
 
 Administration level:
+
+
+Technologies
+HTML, CSS, JavaScript, Bootstrap, Firebase
+
+In a team of 5 students we were tasked with coming up with a solution through a web app to reduce food waste. 
+We decided to accomplish this task by reducing the amount of unforgotten food left to expire in people's fridges.
+Our web app called Recette, scans receipts of groceries, and populates a list.
+The list contains the grocery item, with days remaining until it expires, the user receives email notifications when
+items are near expiry. The user would also be able to select multiple ingredients, and search for a recipe that uses those ingredients.
+
+We had default data on food items and their common time to expire which is used as an autocomplete feature. 
+All data including individual food items are stored on Firebase. Multiple third party APIs were used in the app, for feautures such as
+receipt scanning and recipe searching.

@@ -30,7 +30,7 @@ render () {
         </div>
         <CardActions border>
             <Button colored onClick = {this.handleClick}>Details</Button>
-            <Button colored>GitHub</Button>
+            <Button colored href= {this.props.git}>GitHub</Button>
         </CardActions>
       </div>
       
