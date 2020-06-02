@@ -55,7 +55,7 @@ class Projects extends Component {
                   <span>AWS: Serverless Appointment Maker</span>
                 </CardText>
 
-                <Carousel interval={false}>
+                <Carousel interval={5000}>
                   <Carousel.Item>
                     <img src={aws1} />
                   </Carousel.Item>
@@ -135,7 +135,7 @@ class Projects extends Component {
                   <span>Android Project: Argos</span>
                 </CardText>
 
-                <Carousel interval={false}>
+                <Carousel interval={5000}>
                   <Carousel.Item>
                     <img src={argos1} />
                   </Carousel.Item>
@@ -186,7 +186,7 @@ class Projects extends Component {
                   <span>TAOEX Club</span>
                 </CardText>
 
-                <Carousel interval={false}>
+                <Carousel interval={5000}>
                   <Carousel.Item>
                     <img src={taoex1} />
                   </Carousel.Item>
@@ -247,7 +247,7 @@ class Projects extends Component {
                   <span>Recette</span>
                 </CardText>
 
-                <Carousel interval={false}>
+                <Carousel interval={5000}>
                   <Carousel.Item>
                     <img src={recette1} />
                   </Carousel.Item>
