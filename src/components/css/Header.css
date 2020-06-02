@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab|Ubuntu&display=swap');
+
+.landing-grid{
+  /*background: #4B79A1;  /* fallback for old browsers */
+  /*background: -webkit-linear-gradient(to right, #89C5D4, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+  /*background: linear-gradient(to right, #89C5D4, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url("../../img/autumn2.jpg") ;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  background-size: cover;
+
+}
+.landing-grid, header, .box {
+  height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .landing-grid {
+    /*background: #4B79A1;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #89C5D4, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to right, #89C5D4, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../../img/autumn2.jpg");
+    background-size: cover;
+    text-align: center;
+
+  }
+
+  .landing-grid, header, .box {
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+
+.banner-text {
+  background-color: black;
+  opacity: .8;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  height: auto;
+
+}
+
+.banner-text h1 {
+  font-size: 15vmin;
+  font-weight: bold;
+  color: white;
+  margin: 10%;
+  font-family: 'Raleway', sans-serif;
+  display: inline-block;
+}
+
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+
+.banner-text div {
+  height: auto;
+  overflow: auto;
+}
+
+.icon {
+  filter: invert();
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 70px;
+  width: 70px;
+}
+
+
+.btn-default {
+  background-color: #ffffff;
+  color: #a8780f;
+  border-color: #a8780f;
+  border-width: 5px;
+  padding: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 16pt;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+body {
+  background: #4B79A1;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4B79A1, #89C5D4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4B79A1, #89C5D4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
+}

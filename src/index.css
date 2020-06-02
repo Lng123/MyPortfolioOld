@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
+=======
+
+html,body, div {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+
+>>>>>>> d90291635155fceafa7fa822e42acfb327927e40

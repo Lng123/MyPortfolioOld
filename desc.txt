@@ -1,0 +1,47 @@
+Technologies
+Java, Firebase, Android Studio
+
+An android app named Argos, aimed at improving bike security in Vancouver. Collaborated in a group of three students,
+Argos won first place out of 11 teams at the BCIT android development competition under the community category.
+Argos helps users find secure places to park their bike, using maps showing locations of bike racks and bike theft iin Vancouver.
+
+Argos uses the google maps api to display nearby locations of bike racks, as markers and clusters. The user can then toggle a setting,
+showing all the bike thefts, overlayed as a heatmap.
+
+The datasets for both the bike racks and bike thefts are stored in firebase and populates the map based off latitude and longitude.
+Coordinates were not available for the bike thefts dataset, and therefore a geocoding api was used to convert addresses to coordinates.
+
+
+
+Technologies
+Laravel PHP Framework, MySql
+
+I had the oppurtunity to work on TAOEX Club for our client TAOEX along with five other students as part of the Industry Sponsored Student Projects program at BCIT
+TAOEX Club is a social webapp for the game taoex. 
+TAOEX Club is used to manage user profiles, matches, clubs, and leagues, and was built with Laravel, a PHP framework, while using MySQL as the database.
+
+We were tasked with adding new features to the platform. The new features involved developing an 
+admistrator level features that has full control of the players such as banning, messaging, editing user profiles, and managing clubs, club leaders and members.
+We also added user level features such as owning and joining multiple clubs, club invitations, removing club members, club scores and rankings, and matches.
+
+Added features include:
+
+General:
+Inviting new players to clubs
+Owning and joining multiple clubs
+
+Administration level:
+
+
+Technologies
+HTML, CSS, JavaScript, Bootstrap, Firebase
+
+In a team of 5 students we were tasked with coming up with a solution through a web app to reduce food waste. 
+We decided to accomplish this task by reducing the amount of unforgotten food left to expire in people's fridges.
+Our web app called Recette, scans receipts of groceries, and populates a list.
+The list contains the grocery item, with days remaining until it expires, the user receives email notifications when
+items are near expiry. The user would also be able to select multiple ingredients, and search for a recipe that uses those ingredients.
+
+We had default data on food items and their common time to expire which is used as an autocomplete feature. 
+All data including individual food items are stored on Firebase. Multiple third party APIs were used in the app, for feautures such as
+receipt scanning and recipe searching.
