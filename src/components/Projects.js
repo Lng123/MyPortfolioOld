@@ -24,6 +24,7 @@ import aws8 from "../img/finalses.png";
 import aws9 from "../img/finaldynamodb.png";
 import aws10 from "../img/finals3host.png";
 import Collapse from "./Collapse.js";
+import Disabled from "./CollapseDisabled.js";
 
 class Projects extends Component {
   constructor(props) {
@@ -99,7 +100,7 @@ class Projects extends Component {
                 <Collapse git="https://github.com/Lng123/Argos">
                   <CardText>
                     <h2>Serverless Appointment Maker</h2>
-                    A web application for appointment bookings. Each user is required to register/signin.
+                    A web application for booking appointments. Each user is required to register/signin.
                     A user can then book for an appointment. Once they booked for an appointment, they would
                     recieve an email notification confirming the booked time slot. If the time slot that the user
                     wishes to book is already booked by someone else, they could sign up for the waitlist.
@@ -108,20 +109,17 @@ class Projects extends Component {
                     would be notified.
                     <br />
                     <br />
-                    Argos uses the google maps API to display nearby locations
-                    of bike racks, as markers and clusters. The user can then
-                    toggle a setting, showing all the bike thefts, overlayed as
-                    a heatmap.
+                    In the serverless backend we have 4 lambda functions:home(), book(),
+                    waitlist(), and notifywaitlist(). The lambda functions read and write to the DynamoDB Easch user's username, booking time, and wailist time.
+                    The lambda functions utilize Simple Email Service to send confirmation emails. The functions are then connected to the API Gateway to create
+                    a RESTful API, which are then called with jquery through the app. The files of the app are stored and hosted from a S3 bucket. The code and structure of the app
+                    was based off and modified from an Amazon example repo. Cognito is used as an authorizer
+                    in to the API Gateway method requests to ensure that the users are registered and logged in to the app before using it. 
                     <br />
                     <br />
-                    The datasets for both the bike racks and bike thefts are
-                    stored in firebase and populates the map based off latitude
-                    and longitude. Coordinates were not available for the bike
-                    thefts dataset, and therefore a geocoding API was used to
-                    convert addresses to coordinates.
                     <br></br>
                     <h4>Technologies</h4>
-                    Java, Firebase, Android Studio
+                    AWS Cognito, AWS Lambda, AWS SES, AWS API Gateway, AWS DynamoDB, AWS S3 Bucket
                   </CardText>
                 </Collapse>
               </Card>
@@ -208,7 +206,7 @@ class Projects extends Component {
                   </Carousel.Item>
                 </Carousel>
 
-                <Collapse git="https://github.com/Lng123/taoex.club">
+                <Disabled git="https://github.com/Lng123/taoex.club">
                   <CardText>
                     <h2>TAOEX Club</h2>
                     I had the oppurtunity to work on TAOEX Club for our client
@@ -233,7 +231,7 @@ class Projects extends Component {
                     <h4>Technologies</h4>
                     Laravel PHP Framework, MySql
                   </CardText>
-                </Collapse>
+                </Disabled>
               </Card>
             </div>
 
